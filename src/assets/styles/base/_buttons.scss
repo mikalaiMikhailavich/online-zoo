@@ -1,0 +1,23 @@
+.button {
+  width: 298px;
+  height: 54px;
+  background-color: $color-orange;
+  color: $color-white;
+  border-radius: 25px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.button:hover {
+  background-color: $color-button-hover;
+}
+
+.button:active {
+  background-color: $color-active;
+}
+
+.button_square {
+  border-radius: 5px;
+}

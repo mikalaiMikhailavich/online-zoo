@@ -1,0 +1,47 @@
+@import "abstracts/variables.scss";
+@import "abstracts//mixins";
+
+//base
+
+@import "layouts/container";
+@import "base/base";
+@import "base/buttons";
+
+.header {
+  background-color: black;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  &__copyright {
+    @include font-setting(16px, 500, 22px);
+    color: white;
+  }
+}
+
+.logo {
+  width: 82px;
+  height: 52px;
+  color: white;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+.logo__link {
+  text-align: center;
+}
+
+.logo__icon {
+  position: absolute;
+  top: 20px;
+  left: 9px;
+}
+
+.watch {
+  background: url(../images/background-main.png);
+}

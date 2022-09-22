@@ -1,0 +1,38 @@
+*::before,
+*:after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  //   border: 1px solid red;
+}
+
+body {
+  margin: 0 auto;
+  color: $color-text;
+  font-family: $font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @include font-setting(19px, 400, 23px);
+}
+
+h2 {
+  @include font-setting(106px, 700, 108px);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
