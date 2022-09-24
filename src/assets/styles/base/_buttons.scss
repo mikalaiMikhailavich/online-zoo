@@ -10,16 +10,22 @@
   border: none;
   cursor: pointer;
   transition: all 0.15s ease-in;
-}
 
-.button:hover {
-  background-color: $color-button-hover;
-}
+  &:hover {
+    background-color: $color-button-hover;
+  }
 
-.button:active {
-  background-color: $color-active;
-}
+  &:active {
+    background-color: $color-active;
+  }
 
-.button_square {
-  border-radius: 5px;
+  &_square {
+    border-radius: 5px;
+  }
+
+  &_round {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+  }
 }

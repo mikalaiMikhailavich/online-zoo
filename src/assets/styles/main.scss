@@ -1,81 +1,26 @@
 @import "abstracts/variables.scss";
 @import "abstracts//mixins";
 
-//base
-
 @import "layouts/container";
+
+//base
 @import "base/base";
 @import "base/buttons";
+@import "base/logo";
+
+@import "layouts/header";
+
+//sections
+
+@import "sections/watch";
+@import "sections/backstage";
+@import "sections/pets";
+@import "sections/feed";
 
 html {
   ::-webkit-scrollbar {
     width: 0;
   }
-}
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  background-color: black;
-
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-  }
-
-  &__copyright {
-    @include font-setting(16px, 500, 22px);
-    color: white;
-  }
-}
-
-.logo {
-  width: 82px;
-  height: 52px;
-  color: white;
-  position: relative;
-  border: 1px solid white;
-  border-radius: 2px;
-
-  &__link {
-    text-align: center;
-  }
-
-  &__icon {
-    position: absolute;
-    top: 20px;
-    left: 9px;
-  }
-}
-
-.watch {
-  background: center / cover no-repeat url(../images/background-main.png);
-  position: relative;
-
-  &__inner {
-    padding: 163px 0 158px 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    width: 100%;
-    left: 100%;
-    transform: translateX(-100%);
-  }
-
-  &__button {
-    margin-top: 5px;
-  }
-}
-
-.watch__title_colored {
-  color: $color-yellow;
 }
 
 .background-flower {
@@ -86,40 +31,4 @@ html {
   height: 605px;
 
   background: url(../images/background_flower.png) no-repeat;
-}
-
-.backstage {
-  background: right top 12px no-repeat url(../images/background_flower.png);
-  padding: 140px 0 180px 0;
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__image {
-    max-width: 609px;
-    width: 100%;
-    img {
-      display: block;
-      width: 100%;
-      // height: 100%;
-      // object-fit: cover;
-    }
-  }
-  &__info {
-    max-width: 465px;
-  }
-
-  &__title {
-    margin-bottom: 20px;
-    @include font-setting(48px, 400, 58px);
-  }
-
-  &__subtitle {
-    margin: 54px 0 34px 0;
-    @include font-setting(24px, 400, 29px);
-  }
-
-  &__text {
-    @include font-setting(16px, 400, 22.4px);
-  }
 }
