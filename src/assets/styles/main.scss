@@ -1,14 +1,14 @@
 @import "abstracts/variables.scss";
 @import "abstracts//mixins";
 
-@import "layouts/container";
-
 //base
 @import "base/base";
 @import "base/buttons";
 @import "base/logo";
 
+@import "layouts/container";
 @import "layouts/header";
+@import "layouts/navigation";
 
 //sections
 
@@ -16,6 +16,7 @@
 @import "sections/backstage";
 @import "sections/pets";
 @import "sections/feed";
+@import "sections/testimonials";
 
 html {
   ::-webkit-scrollbar {
