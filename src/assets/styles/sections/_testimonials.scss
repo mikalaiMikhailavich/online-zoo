@@ -1,7 +1,7 @@
 .testimonials {
-  background: right bottom -100px no-repeat url(../images/testimonials-flower.png);
+  background: right bottom -131px no-repeat url(../images/testimonials-flower.png);
   margin-top: 140px;
-  padding-bottom: 180px;
+  padding-bottom: 179px;
   &__title {
     margin-bottom: 47px;
     text-align: center;
@@ -15,7 +15,8 @@
   }
 
   &__card {
-    padding: 15px 15px 19px 16px;
+    max-width: 266px;
+    padding: 15px 14px 19px 16px;
     background-color: $color-gray-light;
     border: 2px solid #f3a9f8;
     border-radius: 20px;
@@ -53,7 +54,7 @@
   }
 
   &__range {
-    margin: 21px auto 0 auto;
+    margin: 13px auto 0 auto;
     max-width: 599px;
     input {
       width: 100%;
@@ -66,7 +67,7 @@
   }
 
   &__button {
-    margin-top: 31px;
+    margin-top: 28px;
   }
 }
 

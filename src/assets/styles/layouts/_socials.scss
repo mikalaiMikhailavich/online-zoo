@@ -6,9 +6,19 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    &:active {
+      .socials__background {
+        background-color: $color-active;
+      }
+      .socials__name {
+        color: $color-active;
+      }
+    }
   }
 
   &__background {
+    transition: all 0.2s ease-in;
+
     position: relative;
     background-color: #c4c4c480;
     width: 26px;
@@ -25,6 +35,8 @@
   }
 
   &__name {
+    transition: all 0.2s ease-in;
+
     @include font-setting(16px, 400, 22px);
     color: white;
   }

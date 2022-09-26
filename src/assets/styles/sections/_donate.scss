@@ -1,0 +1,222 @@
+.donate {
+  padding: 40px 0 180px 0;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  &__container {
+    padding: 40px 92px 62px 092px;
+    background: rgba(253, 253, 255, 0.52);
+    border-radius: 20px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    padding-right: 10px;
+    @include font-setting(48px, 400, 58px);
+    color: $color-orange;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    @include font-setting(36px, 400, 47px);
+    color: white;
+  }
+
+  &__text {
+    @include font-setting(16px, 500, 22px);
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  &__information {
+    @include font-setting(36px, 400, 47px);
+    color: $color-orange;
+    margin-bottom: 60px;
+  }
+
+  &__inner {
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+  }
+
+  &__description {
+    margin: 20px 0 60px 0;
+    @include font-setting(24px, 400, 29px);
+  }
+
+  &__amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    gap: 14px;
+  }
+
+  &__number {
+    @include font-setting(72px, 500, 58px);
+  }
+
+  &__diet {
+    @include font-setting(16px, 400, 22px);
+  }
+
+  &__animal {
+    margin-left: 53px;
+  }
+
+  &__range {
+    margin-top: 30px;
+  }
+
+  &__ranger {
+    background-color: black;
+    -webkit-appearance: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 910px;
+    width: 100%;
+    height: 2px;
+  }
+
+  &__donate {
+    margin-top: 114px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__inputmoney {
+    outline: none;
+    margin-left: 5px;
+    position: relative;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    background-color: #00000000;
+    width: 268px;
+    height: 54px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #929699;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    &:invalid:not(:placeholder-shown) {
+      border-color: #d31414;
+      color: #d31414;
+    }
+    &:invalid:not(:placeholder-shown) ~ .donation__dollar {
+      color: #d31414;
+    }
+    &:valid:not(:placeholder-shown) {
+      border-color: #4b9200;
+      color: #4b9200;
+    }
+    &:valid:not(:placeholder-shown) ~ .donation__dollar {
+      color: #4b9200;
+    }
+  }
+
+  &__dollar {
+    margin-top: 16px;
+    position: relative;
+    @include font-setting(23px, 700, 22px);
+    color: $color-gray;
+    left: -18px;
+  }
+
+  .text1 {
+    margin-top: 43px;
+  }
+
+  &__radiorow {
+    margin-top: 27px;
+    display: flex;
+    justify-content: center;
+    margin-right: 13px;
+  }
+
+  &__radiomonth {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fe9013;
+    border-radius: 50%;
+    &:checked {
+      background: #4b9200;
+      border: 1px solid #4b9200;
+    }
+    &:checked ~ .donation__monthly {
+      color: #333b41;
+    }
+  }
+
+  &__month {
+    @include font-setting(16px, 400, 22px);
+    margin-left: 10px;
+  }
+
+  &__radionce {
+    margin-left: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fe9013;
+    border-radius: 50%;
+    &:checked {
+      background: #4b9200;
+      border: 1px solid #4b9200;
+    }
+    &:checked ~ .donation__once {
+      color: #333b41;
+    }
+  }
+
+  &__once {
+    padding-left: 8px;
+    color: $color-text;
+  }
+
+  &__button {
+    display: block;
+    margin: 28px auto 0 auto;
+  }
+
+  &__share {
+    margin-top: 30px;
+    @include font-setting(16px, 400, 22px);
+
+    text-align: center;
+  }
+}

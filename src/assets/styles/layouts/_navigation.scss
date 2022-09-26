@@ -1,4 +1,14 @@
 .navigation {
   display: flex;
   gap: 58px;
+
+  &__link {
+    &:hover {
+      color: $color-orange;
+    }
+
+    &_active {
+      color: $color-orange;
+    }
+  }
 }

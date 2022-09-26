@@ -1,9 +1,10 @@
 .watch {
+  padding-bottom: 101px;
   background: center / cover no-repeat url(../images/background-main.png);
   position: relative;
 
   &__inner {
-    padding: 163px 0 158px 0;
+    padding: 163px 0 0 0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,8 @@
   }
 
   &__button {
-    margin-top: 5px;
+    margin-top: 63px;
+    margin-left: 6px;
   }
 
   &__title_colored {

@@ -13,8 +13,18 @@
     height: 80px;
   }
 
+  &__block {
+    display: flex;
+    gap: 63px;
+    align-items: center;
+  }
+
   &__copyright {
     @include font-setting(16px, 500, 22px);
     color: white;
+
+    &:hover {
+      color: $color-orange;
+    }
   }
 }

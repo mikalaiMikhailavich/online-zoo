@@ -63,6 +63,12 @@
     flex-direction: column;
     gap: 10px;
     width: 235px;
+    cursor: pointer;
+    &:active {
+      .footer__text {
+        color: $color-active;
+      }
+    }
   }
 
   &__text {
