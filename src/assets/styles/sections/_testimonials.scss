@@ -53,7 +53,7 @@
   }
 
   &__range {
-    margin: 0 auto;
+    margin: 21px auto 0 auto;
     max-width: 599px;
     input {
       width: 100%;
@@ -66,6 +66,7 @@
   }
 
   &__button {
+    margin-top: 31px;
   }
 }
 
@@ -75,5 +76,5 @@ input[type="range"]::-webkit-slider-thumb {
   height: 3px;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
-}
+// input[type="range"]::-webkit-slider-runnable-track {
+// }
